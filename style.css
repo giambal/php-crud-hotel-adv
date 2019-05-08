@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color:slategray;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.container{
+  width: 80vw;
+  margin: auto;
+  border: 1.2px solid white;
+  margin-bottom: 20px;
+}
+
+.column-name{
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+}
+
+.column-name span{
+  width: calc(100%/6);
+  text-align: center;
+}
+
+.pagante{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px;
+  border-top: 1px solid white;
+}
+
+.infos{
+  width: calc(100%/6);
+  text-align: center;
+}
