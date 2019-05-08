@@ -1,8 +1,13 @@
 <?php
 
-  if ($_POST["id"]) {
+  if ($_POST["id"] &&
+      $_POST["name"] &&
+      $_POST["lastname"]) {
 
     $id=$_POST["id"];
+    $name=$_POST["name"];
+    $lastname=$_POST["lastname"];
+
 
     $servername = "localhost";
     $username = "root";
@@ -16,7 +21,8 @@
     }
 
     $sql="
-    DELETE FROM pagamenti
+    UPDATE paganti
+    SET name = '$name' , lastname = '$lastname'
     WHERE id = $id
     ";
 
@@ -25,7 +31,7 @@
 
     $conn->close();
 
-  };
+};
 
 
  ?>
